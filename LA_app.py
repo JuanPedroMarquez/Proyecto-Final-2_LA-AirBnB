@@ -22,7 +22,7 @@ Utilizamos el conjunto de datos de [Inside Airbnb](http://insideairbnb.com/get-t
 # Función para cargar el archivo listings.csv localmente
 @st.cache_data
 def load_data():
-    return pd.read_csv(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/3842e4291dad0588f30a537385ed1e70d1d43602/LA_clean.csv', on_bad_lines='skip')
+    return pd.read_csv(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', on_bad_lines='skip')
 
 # Cargar los datos
 LA = load_data()
@@ -38,7 +38,7 @@ def show_home():
         st.markdown("""
                     Los datos utilizados en este proyecto han sido proporcionados por InsideAirbnb. Este dataset tiene múltiples columnas que detallan las propiedades de Airbnb en Los Ángeles.
                     """)
-        st.image(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/3842e4291dad0588f30a537385ed1e70d1d43602/variables.jpg')
+        st.image(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/variables.jpg')
         
     
     with st.expander("Historia de Los Ángeles"):
@@ -67,7 +67,7 @@ def show_interactive_map():
 def show_dashboard():
     st.title("WordCloud de Amenities")
     st.write("A continuación se muestran los amenities más ofrecidos")
-    st.image(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/3842e4291dad0588f30a537385ed1e70d1d43602/wordcloud.png')
+    st.image(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/wordcloud.png')
 
 
 # Función para mostrar el mapa interactivo
@@ -78,7 +78,7 @@ def show_interactive_map():
     
     # Ejemplo de integración de un mapa usando Folium y Streamlit-Folium
     columns_to_load = ['latitude', 'longitude', 'name', 'host_name', 'price', 'bedrooms','neighbourhood_group', 'neighbourhood','price_level','antiguedad_ex','accommodates','has_pet', 'review_scores_rating','room_type']
-    listings = pd.read_csv(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/3842e4291dad0588f30a537385ed1e70d1d43602/LA_clean.csv', usecols=columns_to_load)
+    listings = pd.read_csv(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', usecols=columns_to_load)
     # Dividir la pantalla en dos columnas
     map_column, filter_column = st.columns([3, 1])
     
@@ -122,7 +122,7 @@ def show_interactive_map():
 
 
 # Definir el contenido de la barra lateral (sidebar)
-st.sidebar.image(r"https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/fcf21582c284229b02ce061ab88a61c3f5f4114b/airbnbwhite.png", width=150)
+st.sidebar.image(r"https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/airbnbwhite.png", width=150)
 st.sidebar.title("Selección")
 page_options = ["Inicio", "Análisis", "Mapa interactivo"]
 page_selection = st.sidebar.radio("Go to", page_options)
