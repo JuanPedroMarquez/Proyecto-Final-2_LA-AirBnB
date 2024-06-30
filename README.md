@@ -1,7 +1,7 @@
 ## Estudio de análisis de datos de Airbnb en Los Ángeles con Streamlit
 # Introducción
 
-Este repositorio contiene un estudio de análisis de datos de Airbnb en Los Ángeles, realizado utilizando la plataforma Streamlit. El objetivo del estudio es comprender las tendencias del mercado de alquileres a corto plazo en la ciudad, identificando los barrios más populares, los tipos de alojamiento más demandados y los precios promedio.
+Este repositorio contiene un estudio de análisis de datos de Airbnb en Los Ángeles, realizado utilizando la plataforma Streamlit. El objetivo del estudio es comprender las tendencias del mercado de alquileres a corto plazo en la ciudad, identificando los barrios más populares, los tipos de alojamiento más demandados y los precios promedio. Este proyecto ha sido realizado en conjunto con [Enol Sutil](https://github.com/Enolsutil13) y con [Miki Sierra](https://github.com/MikiSerra), visitad sus perfiles!
 
 # Datos
 
