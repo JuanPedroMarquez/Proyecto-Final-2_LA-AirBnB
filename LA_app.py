@@ -26,6 +26,7 @@ def load_data():
     try:
         data = pd.read_csv(
             'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', 
+            header=0
             sep=",", 
             engine="python", 
             on_bad_lines='warn'  # Use 'warn' to skip bad lines and issue a warning
