@@ -26,7 +26,7 @@ def load_data():
 
 # Cargar los datos
 LA = load_data()
-LA.drop(["amenities"], inplace=True)
+LA.drop(["amenities"], axis=1, inplace=True)
 
 # Definir las funciones para cada página
 def show_home():
