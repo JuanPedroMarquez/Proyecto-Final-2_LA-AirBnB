@@ -22,9 +22,14 @@ Utilizamos el conjunto de datos de [Inside Airbnb](http://insideairbnb.com/get-t
 # Función para cargar el archivo listings.csv localmente
 @st.cache_data
 def load_data():
-    # Attempt to read the CSV file, skipping problematic lines
+    # Attempt to read the CSV file, handling problematic lines by skipping them and warning
     try:
-        data = pd.read_csv('https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', sep=",", engine="python", error_bad_lines=False, warn_bad_lines=True)
+        data = pd.read_csv(
+            'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', 
+            sep=",", 
+            engine="python", 
+            on_bad_lines='warn'  # Use 'warn' to skip bad lines and issue a warning
+        )
     except Exception as e:
         st.error(f"Error loading data: {e}")
         return pd.DataFrame()  # Return an empty DataFrame in case of error
