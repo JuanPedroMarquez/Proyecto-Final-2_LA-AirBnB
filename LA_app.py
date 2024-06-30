@@ -22,11 +22,11 @@ Utilizamos el conjunto de datos de [Inside Airbnb](http://insideairbnb.com/get-t
 # Función para cargar el archivo listings.csv localmente
 @st.cache_data
 def load_data():
-    return pd.read_csv(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', sep=",", engine="python", quoting=3, on_bad_lines="warn")
+    return pd.read_csv(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', sep=",", engine="python", on_bad_lines="warn")
 
 # Cargar los datos
 LA = load_data()
-
+LA.drop(["amenities"], inplace=True)
 
 # Definir las funciones para cada página
 def show_home():
