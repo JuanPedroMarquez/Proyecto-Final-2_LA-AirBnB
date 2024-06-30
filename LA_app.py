@@ -122,7 +122,7 @@ def show_interactive_map():
 
 
 # Definir el contenido de la barra lateral (sidebar)
-st.sidebar.image(r"https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/3842e4291dad0588f30a537385ed1e70d1d43602/airbnbwhite.png", width=150)
+st.sidebar.image(r"https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/fcf21582c284229b02ce061ab88a61c3f5f4114b/airbnbwhite.png", width=150)
 st.sidebar.title("Selección")
 page_options = ["Inicio", "Análisis", "Mapa interactivo"]
 page_selection = st.sidebar.radio("Go to", page_options)
