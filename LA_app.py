@@ -25,7 +25,7 @@ def load_data():
     # Attempt to read the CSV file, handling problematic lines by skipping them and warning
     try:
         data = pd.read_csv(
-            'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', 
+            'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/11f223b55fb6e8456dcaa58e708f42e33b0b254e/dfstreamlit.csv', 
             header=0,
             sep=",", 
             engine="python", 
