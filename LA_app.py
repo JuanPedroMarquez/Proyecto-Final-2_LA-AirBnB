@@ -23,6 +23,8 @@ Utilizamos el conjunto de datos de [Inside Airbnb](http://insideairbnb.com/get-t
 @st.cache_data
 def load_data():
     return pd.read_csv(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/LA_clean.csv', sep=",", engine="python")
+    drop_columns = ['amenities']
+    LA.drop(drop_columns, axis=1, inplace=True)
 
 # Cargar los datos
 LA = load_data()
