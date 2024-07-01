@@ -21,7 +21,7 @@ Utilizamos el conjunto de datos de [Inside Airbnb](http://insideairbnb.com/get-t
 )
 # Función para cargar el archivo listings.csv localmente
 import csv
-URL = r"https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/f200fc92e957585d945ca63cff5fb21c70eba534/LA_clean.csv"
+URL = r"https://raw.githubusercontent.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/main/LA_clean.csv"
 @st.cache_data
 def load_data():
     # Attempt to read the CSV file, handling problematic lines by skipping them and warning
@@ -92,7 +92,7 @@ def show_interactive_map():
     
     # Ejemplo de integración de un mapa usando Folium y Streamlit-Folium
     columns_to_load = ['latitude', 'longitude', 'name', 'host_name', 'price', 'bedrooms','neighbourhood_group', 'neighbourhood','price_level','antiguedad_ex','accommodates','has_pet', 'review_scores_rating','room_type']
-    listings = pd.read_csv(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/f200fc92e957585d945ca63cff5fb21c70eba534/LA_clean.csv', usecols=columns_to_load)
+    listings = pd.read_csv(r'https://raw.githubusercontent.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/main/LA_clean.csv', usecols=columns_to_load)
     # Dividir la pantalla en dos columnas
     map_column, filter_column = st.columns([3, 1])
     
