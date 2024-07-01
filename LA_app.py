@@ -20,6 +20,7 @@ Utilizamos el conjunto de datos de [Inside Airbnb](http://insideairbnb.com/get-t
 """
 )
 # Función para cargar el archivo listings.csv localmente
+import csv
 @st.cache_data
 def load_data():
     # Attempt to read the CSV file, handling problematic lines by skipping them and warning
@@ -29,7 +30,8 @@ def load_data():
             header=0,
             sep=",", 
             engine="python", 
-            on_bad_lines='warn'  # Use 'warn' to skip bad lines and issue a warning
+            on_bad_lines='warn',  # Use 'warn' to skip bad lines and issue a warning
+            quoting=csv.QUOTE_NONE
         )
     except Exception as e:
         st.error(f"Error loading data: {e}")
