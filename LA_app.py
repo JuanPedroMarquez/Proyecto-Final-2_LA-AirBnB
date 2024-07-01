@@ -15,6 +15,7 @@ st.write(
 """
 Esta aplicación permite explorar los datos de los alojamientos de Airbnb en Los Ángeles.
 Utilizamos el conjunto de datos de [Inside Airbnb](http://insideairbnb.com/get-the-data.html).
+Puedes cambiar el tema de esta aplicación pulsando en los 3 puntitos de la esquina superior derecha, seleccionar "Settings" y elegir el tema que más te guste.
 """
 )
 # Función para cargar el archivo listings.csv localmente
@@ -86,7 +87,7 @@ def show_dashboard():
 def show_interactive_map():
     
     st.header("Análisis de Datos de Airbnb en Los Ángeles")
-    st.write('Aquí podrás visualizar el mapa de Los Ángeles y aplicar diversos filtros')
+    st.write('Aquí podrás visualizar el mapa de Los Ángeles y aplicar diversos filtros. Si deseas ver más información sobre los alojamientos, tienes el archivo csv a tu disposición en el repositorio del GitHub.')
     
     # Ejemplo de integración de un mapa usando Folium y Streamlit-Folium
     columns_to_load = ['latitude', 'longitude', 'name', 'host_name', 'price', 'bedrooms','neighbourhood_group', 'neighbourhood','price_level','antiguedad_ex','accommodates','has_pet', 'review_scores_rating','room_type']
