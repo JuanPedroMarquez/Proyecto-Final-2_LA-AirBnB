@@ -81,7 +81,7 @@ def show_interactive_map():
 def show_dashboard():
     st.title("WordCloud de Amenities")
     st.write("A continuación se muestran los amenities más ofrecidos")
-    st.image(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/1b4cc764a3183b17b733d0a67bca0795ea0f4418/wordcloud.png')
+    st.image(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/3b88d0609e39f6089a433e2817ee0e2a1ad636d0/wordcloud.png')
 
 
 # Función para mostrar el mapa interactivo
