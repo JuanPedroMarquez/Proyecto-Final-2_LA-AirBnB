@@ -52,7 +52,7 @@ def show_home():
         st.markdown("""
                     Los datos utilizados en este proyecto han sido proporcionados por InsideAirbnb. Este dataset tiene múltiples columnas que detallan las propiedades de Airbnb en Los Ángeles.
                     """)
-        st.image(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/2de1f8e3adb922df0024dfc6dc81d93f938b6390/variables.jpg')
+        st.image(r'https://raw.githubusercontent.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/main/variables.jpg')
         
     
     with st.expander("Historia de Los Ángeles"):
@@ -81,7 +81,7 @@ def show_interactive_map():
 def show_dashboard():
     st.title("WordCloud de Amenities")
     st.write("A continuación se muestran los amenities más ofrecidos")
-    st.image(r'https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/3b88d0609e39f6089a433e2817ee0e2a1ad636d0/wordcloud.png')
+    st.image(r'https://raw.githubusercontent.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/main/wordcloud.png')
 
 
 # Función para mostrar el mapa interactivo
@@ -136,7 +136,7 @@ def show_interactive_map():
 
 
 # Definir el contenido de la barra lateral (sidebar)
-st.sidebar.image(r"https://github.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/blob/2de1f8e3adb922df0024dfc6dc81d93f938b6390/airbnbwhite.png", width=150)
+st.sidebar.image(r"https://raw.githubusercontent.com/JuanPedroMarquez/Proyecto-Final-2_LA-AirBnB/main/airbnbwhite.png", width=150)
 st.sidebar.title("Selección")
 page_options = ["Inicio", "Análisis", "Mapa interactivo"]
 page_selection = st.sidebar.radio("Go to", page_options)
