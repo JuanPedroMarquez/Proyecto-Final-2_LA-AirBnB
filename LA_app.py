@@ -1,4 +1,4 @@
-# Descargamos e importamos las librerías necesarias, indicadas en el archivo requirements.txt
+# Importamos las librerías necesarias, indicadas en el archivo requirements.txt
 
 import streamlit as st
 import pandas as pd
