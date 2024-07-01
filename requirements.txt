@@ -1,7 +1,5 @@
 streamlit
 pandas == 2.2.2
 folium
-geopandas
-branca
 streamlit-folium
 wordcloud
