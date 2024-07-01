@@ -31,7 +31,7 @@ def load_data():
             header=0,
             sep=",", 
             engine="python", 
-           # on_bad_lines='skip',  # Use 'warn' to skip bad lines and issue a warning
+            on_bad_lines='warn',  # Use 'warn' to skip bad lines and issue a warning
             quoting=csv.QUOTE_NONE
         )
     except Exception as e:
